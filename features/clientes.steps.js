@@ -1,4 +1,6 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
+const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
+
+setDefaultTimeout(60 * 1000);
 
 const path = require('path');
 const { ServiceBuilder } = require('selenium-webdriver/chrome');
